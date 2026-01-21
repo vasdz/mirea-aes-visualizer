@@ -1,9 +1,14 @@
-#include "mainwindow.hpp"
 #include <QApplication>
+#include "mainwindow.hpp"
 
 int main(int argc, char *argv[]) {
-    QApplication a(argc, argv);
+    QApplication app(argc, argv);
+    QApplication::setApplicationName("MIREA AES Visualizer");
+    QApplication::setOrganizationName("MIREA");
+
     MainWindow w;
     w.show();
-    return a.exec();
+
+    return app.exec();
 }
+
